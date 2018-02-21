@@ -13,11 +13,10 @@ class PeopleController < ApplicationController
 
   def find
     @msg = 'please type search word...'
+    @people = Array.new
     if request.post? then
-      f = params[:find].split(',')
-      @people = Person.all.limit(f[0]).offset(f[1])
-    else
-      @people = Person.all
+      f = '%' + params[:find] + '%'
+      @people = Person.where "name like ? or mail like ?", f, f
     end
   end
 
