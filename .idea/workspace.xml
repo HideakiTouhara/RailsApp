@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="703da492-e84b-48e0-a223-b6d76be07877" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/config/assets.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/config/routes.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/gray.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/blogs.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/config/routes.rb" afterPath="$PROJECT_DIR$/app/assets/config/routes.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -85,8 +81,8 @@
       <file leaf-file-name="routes.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2130">
-              <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+            <state relative-caret-position="465">
+              <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -402,12 +398,12 @@
       <workItem from="1518794376368" duration="7832000" />
       <workItem from="1520780926649" duration="688000" />
       <workItem from="1522066432402" duration="7482000" />
-      <workItem from="1522922801354" duration="3585000" />
+      <workItem from="1522922801354" duration="3793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27818000" />
+    <option name="totallyTimeSpent" value="28026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -830,8 +826,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2130">
-          <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+        <state relative-caret-position="465">
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding />
         </state>
       </provider>
