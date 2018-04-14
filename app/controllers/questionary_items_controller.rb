@@ -1,5 +1,6 @@
 class QuestionaryItemsController < ApplicationController
   before_action :set_questionary_item, only: [:show, :edit, :update, :destroy]
+  layout 'questionaries'
 
   # GET /questionary_items
   # GET /questionary_items.json
@@ -15,6 +16,8 @@ class QuestionaryItemsController < ApplicationController
   # GET /questionary_items/new
   def new
     @questionary_item = QuestionaryItem.new
+    @questionary_item.questionary_id = params[:id]
+    @questionary = Questionary.find params[:id]
   end
 
   # GET /questionary_items/1/edit
@@ -28,7 +31,7 @@ class QuestionaryItemsController < ApplicationController
 
     respond_to do |format|
       if @questionary_item.save
-        format.html { redirect_to @questionary_item, notice: 'Questionary item was successfully created.' }
+        format.html { redirect_to '/questionary_choices/new/' + @questionary_item.id.to_s }
         format.json { render :show, status: :created, location: @questionary_item }
       else
         format.html { render :new }
@@ -62,13 +65,13 @@ class QuestionaryItemsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_questionary_item
-      @questionary_item = QuestionaryItem.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_questionary_item
+    @questionary_item = QuestionaryItem.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def questionary_item_params
-      params.require(:questionary_item).permit(:content, :questionary_id)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def questionary_item_params
+    params.require(:questionary_item).permit(:content, :questionary_id)
+  end
 end
