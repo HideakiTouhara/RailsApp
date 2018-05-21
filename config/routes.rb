@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :accounts
   get 'ajax/index'
 
   resources :questionary_results

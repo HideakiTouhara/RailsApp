@@ -137,4 +137,6 @@ Rails.application.routes.draw do
   post 'helo', to: 'helo#index'
   post 'helo/index'
   get 'helo/other'
+
+  get 'helo/login_check'
 end
