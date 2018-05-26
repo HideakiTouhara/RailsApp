@@ -1,24 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Questionary Results</h1>
+<h1><%=@questionary.title %></h1>
 
 <table>
   <thead>
   <tr>
-    <th>ID</th>
     <th>Result</th>
-    <th colspan="3"></th>
   </tr>
   </thead>
 
   <tbody>
-  <% @questionaries.each do |questionary| %>
+  <% @questionary_results.each do |result| %>
       <tr>
-        <td><%= questionary.id %></td>
-        <td><%= questionary.title %></td>
-        <td><a href="/questionary_results/<%=questionary.id %>">Show</a></td>
+        <td><%= result.result %></td>
       </tr>
   <% end %>
   </tbody>
 </table>
-
+<br>
+<a href="/questionary_results/calc/<%=@questionary.id %>">Calc Data</a>
